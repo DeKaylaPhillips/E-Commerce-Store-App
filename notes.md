@@ -3,14 +3,13 @@
 - ~~install~~ django
 - ~~install~~ requests
 - ~~install~~ dotenv
+- ~~install requests-oauthlib~~
 - ~~freeze~~ requirements.txt
 
 *Store Project*
 - ~~configure~~ settings.py: installed_apps, static files directory
-- ~~configure~~ urls.py
-- ~~mkdir~~ static: touch app.css, touch app.js  
+- ~~configure~~ urls.py  
 
-  
 *Store Application*
 - ~~touch~~ urls.py
 - ~~touch~~ templates.py
@@ -57,4 +56,8 @@
   - ~~.venv~~
   - ~~.env~~
   - ~~__pycache__)~~
+
+- ~~mkdir~~ static
+  - ~~touch~~ app.css
+  - ~~touch~~ app.js
 
