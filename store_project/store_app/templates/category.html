@@ -1,0 +1,34 @@
+{% extends 'layout.html' %} 
+{% load static %}
+{% block category_page %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'app.css' %}">
+</head>
+<body>
+
+{% for category in data %}
+    {% if forloop.first %} 
+    <h1 class="category-title">{{ category.category }}</h1>    
+    {% endif %} 
+{% endfor %} 
+
+<div class="row row-cols-1 row-cols-md-2 g-4">
+    {% for item in data %}
+    <div class="col">
+      <div class="card">
+        <img src='{{ item.image_url }}' class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{ item.name }}</h5>
+          <p class="card-text">${{ item.cost }}</p>
+          <a class="btn btn-outline-dark" href="{% url 'product' product_id=item.id %}" role="button">Details</a>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
+</body>
+</html>

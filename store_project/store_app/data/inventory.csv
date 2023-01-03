@@ -1,0 +1,17 @@
+product_id,category_id,category,name,cost,image_url
+1,1,Decor,Landscape Pattern Tapestry,8.00,https://img.ltwebstatic.com/images3_pi/2022/08/17/16607294053f485bdb06debafbd8580748179470aa_thumbnail_600x.webp  
+2,1,Decor,Sheer Single Panel Curtain,6.00,https://img.ltwebstatic.com/images3_pi/2022/08/25/1661416200c05d247285e68b85aaf02db30688735d_thumbnail_600x.webp
+3,1,Decor,Cube Design Candle,3.00,https://img.ltwebstatic.com/images3_pi/2022/09/23/1663913212942f9380aefb4349f5b7f79733995719_thumbnail_600x.webp
+4,1,Decor,Plain Plush Rug,28.00,https://img.ltwebstatic.com/images3_pi/2022/09/29/16644167757f1d79b51617a6b4b6776ecc9c731776_thumbnail_600x.webp
+5,2,Kitchen,Wooden Cup Set,6.00,https://img.ltwebstatic.com/images3_pi/2021/12/23/16402243137cbade4597a253d37aa438c7f6ca3ebc_thumbnail_600x.webp
+6,2,Kitchen,Wooden Bowl Set,16.00,https://img.ltwebstatic.com/images3_pi/2022/10/18/1666088947e1a43e8084d7706addb4b671db2dcf5c_thumbnail_600x.webp
+7,2,Kitchen,Silicone Cooking Utensil Set,30.00,https://img.ltwebstatic.com/images3_pi/2022/08/05/16596796695742aa4d9a55b3e961588ee980e2b683_thumbnail_600x.webp
+8,2,Kitchen,Stainless Steel Cutlery Set,5.00,https://img.ltwebstatic.com/images3_pi/2020/12/29/1609212962c5a9375a4fc863929d33c6224799d18b_thumbnail_600x.webp
+9,3,Bedroom,Two Toned Duvet Cover Set,27.00,https://img.ltwebstatic.com/images3_pi/2022/09/07/16625145082ea64ca1beec97befc55a9ed72af4537_thumbnail_600x.webp
+10,3,Bedroom,Solid Color Satin Pillowcase,6.50,https://img.ltwebstatic.com/images3_pi/2021/12/31/16409148229ad9f0600375272055848d9462a6d1eb_thumbnail_600x.webp
+11,3,Bedroom,Satin Fitted Sheet Set,38.00,https://img.ltwebstatic.com/images3_pi/2021/05/11/16207144749dc1bd11d87d3480f9739b214d557005_thumbnail_600x.webp
+12,3,Bedroom,Solid Fuzzy Throw Blanket,15.00,https://img.ltwebstatic.com/images3_pi/2022/07/01/1656641100fb57db75c757e981c4bbd650c1d2a4ee_thumbnail_600x.webp
+13,4,Bathroom,Solid Absorbent Bath Rug,7.00,https://img.ltwebstatic.com/images3_pi/2022/07/26/165883145172fec0fbf083a4a554232bc15c7582bd_thumbnail_600x.webp
+14,4,Bathroom,Abstract Print Shower Curtain,18.00,https://img.ltwebstatic.com/images3_pi/2022/05/09/1652075052f6806ad92f510610227b58502f3fa280_thumbnail_600x.webp
+15,4,Bathroom,Solid Bath Towel Set,11.00,https://img.ltwebstatic.com/images3_pi/2022/06/20/165571320400f5a2e5c01a77cc4851352cf88d6788_thumbnail_600x.webp
+16,4,Bathroom,Wall Mounted Toothbrush Tumbler,4.00,https://img.ltwebstatic.com/images3_pi/2022/07/03/165683230760bd1af342ec19f6019a425b802eaa1d_thumbnail_600x.webp

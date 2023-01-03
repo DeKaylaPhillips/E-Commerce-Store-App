@@ -1,0 +1,31 @@
+{% extends 'layout.html' %}
+{% load static %}
+{% block product_page %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'app.css' %}">
+</head>
+<body>
+    <div class="container-sm text-center">
+        {% for item in data %}
+        <div class="card">
+            <img src="{{ item.image_url }}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">{{ item.name }}</h5>
+              <p class="card-text">Cost: ${{ item.cost }}</p>
+              <form method="POST" action="{% url 'shopping-cart' %}">
+                <input type="hidden" name="{{ item.name }}" value="{{ item.id }}">
+              <button type="submit" class="btn btn-outline-dark">Add to Cart</button>
+              </form>
+            </div>
+        </div>    
+    </div>
+    {% endfor %}    
+</body>
+{% endblock %}
+</html>
+
+
+  
+
