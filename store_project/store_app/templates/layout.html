@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -15,6 +16,10 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="{% static 'app.css' %}" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="{% static 'main.js' %}"></script>
+
     <title>Cozy Kay's</title>
   </head>
   <body>
@@ -53,14 +58,13 @@
               <a class="nav-link" href="{% url 'shopping-cart' %}">Cart</a>
             </li>
           </ul>
-          <form class="d-flex" role="search" method="POST" action="">
+          <form class="d-flex" role="search" method="POST" action="{% url 'search' %}">
             <input
+              name="query"
               class="form-control me-2"
               type="search"
-              placeholder="Search"
+              placeholder="keyword"
               aria-label="Search"
-              name="search_query"
-              value="{{ search_query }}"
             />
             <button class="btn btn-outline-success" type="submit">
               Search
@@ -76,6 +80,8 @@
     {% block product_page %}
     {% endblock %}
     {% block shopping-cart %}
+    {% endblock %}
+    {% block search-results %}
     {% endblock %}
   </body>
 </html>

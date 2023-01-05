@@ -1,0 +1,18 @@
+{% extends 'layout.html' %}
+{% load static %}
+{% block search-results %}
+<div class="container-sm m-5 p-5">
+        <div class="row g-2 align-items-center">
+            <div class="col"> 
+                <div>
+                    <image align="right" style="width: 30vh; margin: 2vh"src="{{ image }}">
+                </div> 
+            </div>
+            <div class="col">
+                <h5>
+                    {{ item }}
+                </h5>
+            </div>
+        </div>
+</div>
+{% endblock %}

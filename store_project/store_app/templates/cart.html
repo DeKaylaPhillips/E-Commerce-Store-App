@@ -8,29 +8,32 @@
 </head>
 <body>
     <div class="container-sm m-5 p-5">
-        {% for item in data %}  
-        <div class="row g-2 align-items-center">
+        {% for item in cart %}  
+        <div class="row g-2 align-items-center" id="{{item.product_id}}">
             <div class="col"> 
                 <div>
-                    <image align="right" style="width: 50%"src="{{ item.image_url }}">
+                    <image align="right" style="width: 30vh; margin: 2vh"src="{{ item.image_url }}">
                 </div> 
             </div>
             <div class="col">
                 <h5>
                     {{ item.name }}
                 </h5>
-                <h5>
+                <h6>
                     ${{ item.cost }}
-                </h5>  
-                <h5>
-                    <form method="POST">
-                        <input type="number" min="1" placeholder="1" name="quantity" value="quantity">
-                        <button type="submit">+</button>
-                    </form>
-                </h5>       
+                </h6>
+                <h6>
+                    Quantity: {{ item.quantity }}
+                    <br />
+                    <br />    
+                    <button id="{{item.product_id}}" onclick="deleteItem({{item.product_id}})" class="btn btn-outline-dark btn-sm">Remove</button>
+                </h6>         
+            </div>
+            {% endfor %}
+            <div align="right">
+                <h5>Total: {{ total }}</h5>    
             </div>
         </div>
-        {% endfor %}  
     </div> 
 </body>
 {% endblock %}

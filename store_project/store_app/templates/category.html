@@ -23,7 +23,7 @@
         <div class="card-body">
           <h5 class="card-title">{{ item.name }}</h5>
           <p class="card-text">${{ item.cost }}</p>
-          <a class="btn btn-outline-dark" href="{% url 'product' product_id=item.id %}" role="button">Details</a>
+          <a class="btn btn-outline-dark" href="{% url 'product' product_id=item.product_id %}" role="button">Details</a>
         </div>
       </div>
     </div>
